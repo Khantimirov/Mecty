@@ -1,0 +1,22 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+ViewData["Title"] = "Taskthird";
+}
+<div id="TaskThirdSolution">
+    <form method="post">
+        <p>
+            <div class="input-group mb-3">
+                <input type="text" name="Slovo" class="form-control" placeholder="Введите слово" aria-label="" aria-describedby="basic-addon1">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="submit">Проверить</button>
+                </div>
+            </div>
+        </p>
+        <p>
+            <label>Начинается и заканчивается на одну и ту же букву?</label>
+            <label>@ViewBag.Proveril</label>
+        </p>
+    </form>
+</div>
